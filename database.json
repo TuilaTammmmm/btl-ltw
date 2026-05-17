@@ -1,0 +1,262 @@
+{
+    "account": {
+        "adminacc": {
+            "username": "admin",
+            "password": "123456"
+        }
+    },
+    "pagesText": {
+        "gioithieu": {
+            "title": "📖 Giới thiệu về Tiệm Bánh Ngọt",
+            "content": "Tiệm Bánh Ngọt ra đời từ niềm đam mê làm bánh và mong muốn mang đến niềm vui ngọt ngào cho mọi người. Mỗi chiếc bánh đều được làm từ nguyên liệu tươi ngon nhất, không chất bảo quản, đảm bảo hương vị tự nhiên và an toàn. Chúng tôi tin rằng một chiếc bánh ngon có thể làm bừng sáng cả một ngày!"
+        },
+        "giaodich": {
+            "title": "🤝 Hướng dẫn giao dịch",
+            "content": "1. Chọn món ăn bạn yêu thích ở Trang Chủ và ấn 'Thêm vào giỏ hàng'.\n2. Bấm vào biểu tượng Giỏ Hàng để kiểm tra lại các món đã chọn và tổng số tiền.\n3. Điền thông tin giao hàng (Tên, Số điện thoại, Địa chỉ).\n4. Bấm 'Xác nhận đặt hàng' và đợi chúng tôi giao tới nhé."
+        },
+        "thanhtoan": {
+            "title": "💳 Chính sách thanh toán",
+            "content": "Hiện tại Tiệm Bánh Ngọt hỗ trợ 2 hình thức thanh toán chính:\n- Thanh toán tiền mặt khi nhận hàng (Ship COD).\n- Chuyển khoản qua số tài khoản ngân hàng (Thông tin sẽ được cung cấp sau khi xác nhận đơn hàng)."
+        },
+        "vanchuyen": {
+            "title": "🚚 Chính sách vận chuyển",
+            "content": "- Giao hàng nhanh chóng trong vòng 45 phút đối với bán kính 5km.\n- Đồng giá phí ship 20,000đ cho mọi đơn hàng nội thành.\n- MIỄN PHÍ vận chuyển cho tất cả hóa đơn trên 300,000 VNĐ."
+        },
+        "infoshop": {
+            "name": "Tiệm Bánh Ngọt",
+            "phone": "0912.345.678",
+            "address": "456 Đường C, Phường D, TP. E",
+            "time": "Mở cửa: 7:00 Sáng - 9:00 Tối",
+            "mota": "Mời bạn xem menu và đặt hàng online qua trang web này nhé,\nCác bạn có thể đến nhận tại cửa hàng hoặc mình sẽ giao hàng đến cho bạn nè ~",
+            "image": ""
+        }
+    },
+    "Category": [
+        {
+            "id": "1",
+            "Category_Name": "Bánh Kem"
+        },
+        {
+            "id": "2",
+            "Category_Name": "Bánh Mì & Bánh Ngọt"
+        },
+        {
+            "id": "3",
+            "Category_Name": "Bánh Quy & Kẹo"
+        },
+        {
+            "id": "4",
+            "Category_Name": "Bánh Mousse & Cheesecake"
+        },
+        {
+            "id": "5",
+            "Category_Name": "Bánh Tart & Pie"
+        }
+    ],
+    "Product": [
+        {
+            "id": "1",
+            "Category_ID": "1",
+            "Name": "Bánh Kem Socola",
+            "Price": 250000,
+            "Image": "https://cdn.tgdd.vn/2021/04/CookProduct/1200-1200x676-43.jpg"
+        },
+        {
+            "id": "2",
+            "Category_ID": "1",
+            "Name": "Bánh Kem Dâu Tây",
+            "Price": 280000,
+            "Image": "https://daylambanh.edu.vn/wp-content/uploads/2017/11/banh-kem-duoc-trang-tri-voi-ong-gia-tuyet-dau-tay-600x523.jpg"
+        },
+        {
+            "id": "3",
+            "Category_ID": "1",
+            "Name": "Bánh Kem Matcha",
+            "Price": 260000,
+            "Image": "https://cdn2.fptshop.com.vn/unsafe/Banh_kem_matcha_1_6e42f54998.jpg"
+        },
+        {
+            "id": "4",
+            "Category_ID": "2",
+            "Name": "Bánh Mì Bơ Tỏi",
+            "Price": 35000,
+            "Image": "https://daylambanh.edu.vn/wp-content/uploads/2017/03/banh-mi-bo-toi.jpg"
+        },
+        {
+            "id": "5",
+            "Category_ID": "2",
+            "Name": "Croissant",
+            "Price": 40000,
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYtILIloaC2GI6-TExLhy8NbOSCCqOlMqtHQ&s"
+        },
+        {
+            "id": "6",
+            "Category_ID": "2",
+            "Name": "Bánh Su Kem",
+            "Price": 25000,
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_hLHr86KHtI7zrsi88w2wgRN0cy3XknE3A&s"
+        },
+        {
+            "id": "7",
+            "Category_ID": "3",
+            "Name": "Bánh Quy Bơ",
+            "Price": 60000,
+            "Image": "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_6_11_638537285547421498_cach-lam-banh-quy-bo-danisa.png"
+        },
+        {
+            "id": "8",
+            "Category_ID": "3",
+            "Name": "Macaron",
+            "Price": 150000,
+            "Image": "https://www.allrecipes.com/thmb/ftmd4xSXxQOcYwyLoVOAeEQHkpY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/223232macaronsKim4x3-97e86da8c9e849218d5b70ac93bbe5f1.jpg"
+        },
+        {
+            "id": "9",
+            "Category_ID": "1",
+            "Name": "Bánh Kem Tiramisu",
+            "Price": 300000,
+            "Image": ""
+        },
+        {
+            "id": "10",
+            "Category_ID": "1",
+            "Name": "Bánh Kem Phô Mai",
+            "Price": 220000,
+            "Image": "https://titiphamcake.com/wp-content/uploads/2023/03/z4162184332606_1cdfeb69432b797671f085703191c04b-768x1024.jpg"
+        },
+        {
+            "id": "11",
+            "Category_ID": "1",
+            "Name": "Bánh Kem Bắp",
+            "Price": 270000,
+            "Image": "https://r2.cms.4handy.vn/banh-kem-bap.jpg"
+        },
+        {
+            "id": "12",
+            "Category_ID": "2",
+            "Name": "Bánh Mì Hoa Cúc",
+            "Price": 80000,
+            "Image": "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/4/15/image13-1649995664545-16499956646561192638263.jpg"
+        },
+        {
+            "id": "13",
+            "Category_ID": "2",
+            "Name": "Bánh Mì Chà Bông Phô Mai",
+            "Price": 45000,
+            "Image": "https://nafarm.vn/upload/images/banh-mi-pho-mai-tan-chay-700g.jpg"
+        },
+        {
+            "id": "14",
+            "Category_ID": "2",
+            "Name": "Bánh Bông Lan Trứng Muối",
+            "Price": 65000,
+            "Image": "https://www.cet.edu.vn/wp-content/uploads/2019/11/banh-bong-lan-trung-muoi.jpg"
+        },
+        {
+            "id": "15",
+            "Category_ID": "2",
+            "Name": "Bánh Muffin Vani",
+            "Price": 30000,
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQ60f5mvyI5rneayQqHxVpuKI-gQx-GPVJA&s"
+        },
+        {
+            "id": "16",
+            "Category_ID": "3",
+            "Name": "Bánh Quy Socola Chocochip",
+            "Price": 65000,
+            "Image": "https://cdn.tgdd.vn/2021/01/CookRecipe/GalleryStep/thanh-pham-1101.jpg"
+        },
+        {
+            "id": "17",
+            "Category_ID": "3",
+            "Name": "Kẹo Nougat Hạt Củ Quả",
+            "Price": 120000,
+            "Image": "https://cdn.tgdd.vn/2021/04/CookProduct/1-1200x676-59.jpg"
+        },
+        {
+            "id": "18",
+            "Category_ID": "3",
+            "Name": "Kẹo Dẻo Chíp Chíp Trái Cây",
+            "Price": 40000,
+            "Image": "https://khosimypham.com/wp-content/uploads/25845_vn-11134207-7r98o-lsl4bxlbnmhl75_20241130164725-4.jpg"
+        },
+        {
+            "id": "19",
+            "Category_ID": "3",
+            "Name": "Bánh Ngói Hạnh Nhân",
+            "Price": 95000,
+            "Image": "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2023_12_16_638383234275370490_banh-ngoi-hanh-nhan-thumb.jpg"
+        },
+        {
+            "id": "20",
+            "Category_ID": "4",
+            "Name": "Cheesecake Dâu Tây",
+            "Price": 65000,
+            "Image": "https://cdn.tgdd.vn/Files/2022/07/16/1448325/cach-lam-cheesecake-dau-tay-dep-mat-kho-long-cuong-noi-202207161606029334.jpg"
+        },
+        {
+            "id": "21",
+            "Category_ID": "4",
+            "Name": "Mousse Chanh Dây",
+            "Price": 55000,
+            "Image": "https://file.hstatic.net/200000721249/file/e_chanh_d_y__t_b_o_cho_ng__i__n_ki_ng_4672151084d546969a819e816d9e781f.jpg"
+        },
+        {
+            "id": "22",
+            "Category_ID": "4",
+            "Name": "Basque Burnt Cheesecake",
+            "Price": 75000,
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxGwkXRW1nzKT2u0SC8u7BhnRVAgTS8YElQ&s"
+        },
+        {
+            "id": "23",
+            "Category_ID": "5",
+            "Name": "Tart Trứng",
+            "Price": 25000,
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAi0s28b9lFhB96QkegVFl4GNtzod5Pi6ww&s"
+        },
+        {
+            "id": "24",
+            "Category_ID": "5",
+            "Name": "Tart Trái Cây Tươi",
+            "Price": 45000,
+            "Image": "https://file.hstatic.net/200000438087/article/318521-combo-6-banh-tart-nhan-tr_9b5c2051790c4e229a5532b5cfeb00f8.jpg"
+        },
+        {
+            "id": "25",
+            "Category_ID": "5",
+            "Name": "Bánh Táo",
+            "Price": 50000,
+            "Image": "https://www.huongnghiepaau.com/wp-content/uploads/2018/04/72aa7d15b21afd42eb5f4dfd5619fddf.jpg"
+        },
+        {
+            "id": "26",
+            "Category_ID": "1",
+            "Name": "Bánh Kem Red Velvet",
+            "Price": 320000,
+            "Image": "https://r2.cms.4handy.vn/231-7o0a1840.jpg"
+        },
+        {
+            "id": "27",
+            "Category_ID": "2",
+            "Name": "Donut Phủ Socola",
+            "Price": 20000,
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3apUwMm1Lbf-kf_Bp7R_XUWbgLD5A1BBzg&s"
+        },
+        {
+            "id": "28",
+            "Category_ID": "2",
+            "Name": "Bánh Đan Mạch Trái Cây",
+            "Price": 35000,
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1dDBKuoNd6OAxcWWJrMxnyGyPk5viTAGOlA&s"
+        },
+        {
+            "id": "29",
+            "Category_ID": "4",
+            "Name": "Panna Cotta",
+            "Price": 60000,
+            "Image": "https://www.cet.edu.vn/wp-content/uploads/2021/03/cach-lam-panna-cotta.jpg"
+        }
+    ],
+    "Cart": []
+}
