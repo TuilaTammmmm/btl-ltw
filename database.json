@@ -5,10 +5,18 @@
             "password": "123456"
         }
     },
+    "infoshop": {
+        "name": "Ngọt - Brownies & Cookies",
+        "phone": "0912.345.678",
+        "address": "456 Đường C, Phường D, TP. E",
+        "time": "7:00 Sáng - 9:00 Tối",
+        "mota": "Mời bạn xem menu và đặt hàng online qua trang web này nhé,\nCác bạn có thể đến nhận tại cửa hàng hoặc mình sẽ giao hàng đến cho bạn nè ~",
+        "image": "https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-1/465862386_122111207090595504_7930397557877359795_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeGDPD8-r12bhdrS-hZ9YSXy5Ylt1J52AB_liW3UnnYAH2IpfXYWRziWUKphnk9LzuuF6zL3QIm7Cbxi3udsWJz6&_nc_ohc=eCigeJu_NSwQ7kNvwErlaA9&_nc_oc=AdrHrAZpO-_GU_QPMtbY91BP9E9fZRp9haCD-PlzyUPrHPgMWDulbskAddIWDOQwLmnTQ5QSY89opXNKjtgm-nMb&_nc_zt=24&_nc_ht=scontent.fhan2-5.fna&_nc_gid=ccJ4zcBdt4KmHwKbgzzVIg&_nc_ss=7b2a8&oh=00_Af7fx7E3aZe6tH4mKOxhcNWRVezjhKeSanxjp2WRr9oGiQ&oe=6A0F2B97"
+    },
     "pagesText": {
         "gioithieu": {
-            "title": "📖 Giới thiệu về Tiệm Bánh Ngọt",
-            "content": "Tiệm Bánh Ngọt ra đời từ niềm đam mê làm bánh và mong muốn mang đến niềm vui ngọt ngào cho mọi người. Mỗi chiếc bánh đều được làm từ nguyên liệu tươi ngon nhất, không chất bảo quản, đảm bảo hương vị tự nhiên và an toàn. Chúng tôi tin rằng một chiếc bánh ngon có thể làm bừng sáng cả một ngày!"
+            "title": "📖 Giới thiệu về Ngọt - Brownies & Cookies",
+            "content": "Ngọt - Brownies & Cookies ra đời từ niềm đam mê làm bánh và mong muốn mang đến niềm vui ngọt ngào cho mọi người. Mỗi chiếc bánh đều được làm từ nguyên liệu tươi ngon nhất, không chất bảo quản, đảm bảo hương vị tự nhiên và an toàn. Chúng tôi tin rằng một chiếc bánh ngon có thể làm bừng sáng cả một ngày!"
         },
         "giaodich": {
             "title": "🤝 Hướng dẫn giao dịch",
@@ -16,19 +24,11 @@
         },
         "thanhtoan": {
             "title": "💳 Chính sách thanh toán",
-            "content": "Hiện tại Tiệm Bánh Ngọt hỗ trợ 2 hình thức thanh toán chính:\n- Thanh toán tiền mặt khi nhận hàng (Ship COD).\n- Chuyển khoản qua số tài khoản ngân hàng (Thông tin sẽ được cung cấp sau khi xác nhận đơn hàng)."
+            "content": "Hiện tại Ngọt - Brownies & Cookies hỗ trợ 2 hình thức thanh toán chính:\n- Thanh toán tiền mặt khi nhận hàng (Ship COD).\n- Chuyển khoản qua số tài khoản ngân hàng (Thông tin sẽ được cung cấp sau khi xác nhận đơn hàng)."
         },
         "vanchuyen": {
             "title": "🚚 Chính sách vận chuyển",
             "content": "- Giao hàng nhanh chóng trong vòng 45 phút đối với bán kính 5km.\n- Đồng giá phí ship 20,000đ cho mọi đơn hàng nội thành.\n- MIỄN PHÍ vận chuyển cho tất cả hóa đơn trên 300,000 VNĐ."
-        },
-        "infoshop": {
-            "name": "Tiệm Bánh Ngọt",
-            "phone": "0912.345.678",
-            "address": "456 Đường C, Phường D, TP. E",
-            "time": "Mở cửa: 7:00 Sáng - 9:00 Tối",
-            "mota": "Mời bạn xem menu và đặt hàng online qua trang web này nhé,\nCác bạn có thể đến nhận tại cửa hàng hoặc mình sẽ giao hàng đến cho bạn nè ~",
-            "image": ""
         }
     },
     "Category": [
@@ -59,203 +59,261 @@
             "Category_ID": "1",
             "Name": "Bánh Kem Socola",
             "Price": 250000,
-            "Image": "https://cdn.tgdd.vn/2021/04/CookProduct/1200-1200x676-43.jpg"
+            "Image": "https://cdn.tgdd.vn/2021/04/CookProduct/1200-1200x676-43.jpg",
+            "Pmotangan": "Bánh kem ngọt ngào, đậm vị cacao nguyên chất.",
+            "Pmotadaydu": "Bánh kem socola với lớp cốt mềm mịn hòa quyện cùng kem tươi chocolate béo ngậy và 100% cacao nguyên chất. Hương vị đắng nhẹ đặc trưng làm say lòng mọi tín đồ hảo ngọt, rất phù hợp cho những dịp sinh nhật hay tiệc kỷ niệm ấm cúng."
         },
         {
             "id": "2",
             "Category_ID": "1",
             "Name": "Bánh Kem Dâu Tây",
             "Price": 280000,
-            "Image": "https://daylambanh.edu.vn/wp-content/uploads/2017/11/banh-kem-duoc-trang-tri-voi-ong-gia-tuyet-dau-tay-600x523.jpg"
+            "Image": "https://daylambanh.edu.vn/wp-content/uploads/2017/11/banh-kem-duoc-trang-tri-voi-ong-gia-tuyet-dau-tay-600x523.jpg",
+            "Pmotangan": "Bánh kem tươi mát trang trí dâu tây chua ngọt.",
+            "Pmotadaydu": "Sự kết hợp hoàn hảo giữa cốt bánh gato vị vani truyền thống và lớp kem sữa tươi mát lạnh, bên trên phủ đầy những trái dâu tây Đà Lạt căng mọng chua ngọt. Chiếc bánh mang đến cảm giác thanh mát, nhẹ nhàng, không hề bị ngán."
         },
         {
             "id": "3",
             "Category_ID": "1",
             "Name": "Bánh Kem Matcha",
             "Price": 260000,
-            "Image": "https://cdn2.fptshop.com.vn/unsafe/Banh_kem_matcha_1_6e42f54998.jpg"
+            "Image": "https://cdn2.fptshop.com.vn/unsafe/Banh_kem_matcha_1_6e42f54998.jpg",
+            "Pmotangan": "Bánh kem mang hương thơm thanh mát từ trà xanh.",
+            "Pmotadaydu": "Sử dụng bột matcha nhập khẩu trực tiếp từ Nhật Bản, bánh kem matcha mang đến hương thơm trà xanh thanh mát, chát nhẹ nhưng hậu vị lại vô cùng ngọt ngào. Lớp kem không quá béo, hoàn hảo để thưởng thức cùng gia đình."
         },
         {
             "id": "4",
             "Category_ID": "2",
             "Name": "Bánh Mì Bơ Tỏi",
             "Price": 35000,
-            "Image": "https://daylambanh.edu.vn/wp-content/uploads/2017/03/banh-mi-bo-toi.jpg"
+            "Image": "https://daylambanh.edu.vn/wp-content/uploads/2017/03/banh-mi-bo-toi.jpg",
+            "Pmotangan": "Bánh mì nướng giòn thấm đẫm sốt bơ tỏi.",
+            "Pmotadaydu": "Bánh mì kiểu Pháp được nướng giòn rụm bên ngoài, bên trong ẩm mềm thấm đẫm sốt bơ tỏi đặc biệt pha cùng rau mùi tây thơm nức mũi. Là món ăn nhẹ hoàn hảo khởi đầu cho mọi bữa tiệc."
         },
         {
             "id": "5",
             "Category_ID": "2",
             "Name": "Croissant",
             "Price": 40000,
-            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYtILIloaC2GI6-TExLhy8NbOSCCqOlMqtHQ&s"
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYtILIloaC2GI6-TExLhy8NbOSCCqOlMqtHQ&s",
+            "Pmotangan": "Bánh sừng bò ngàn lớp thơm lừng béo ngậy.",
+            "Pmotadaydu": "Chiếc bánh sừng bò chuẩn phong cách Pháp với lớp vỏ ngàn lớp giòn tan, cắn vào lại dai mềm và thơm nức mùi bơ cao cấp. Một sự lựa chọn tuyệt vời cho bữa sáng cùng một tách cà phê ấm nóng."
         },
         {
             "id": "6",
             "Category_ID": "2",
             "Name": "Bánh Su Kem",
             "Price": 25000,
-            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_hLHr86KHtI7zrsi88w2wgRN0cy3XknE3A&s"
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_hLHr86KHtI7zrsi88w2wgRN0cy3XknE3A&s",
+            "Pmotangan": "Bánh mềm nhân kem trứng tuôn trào ngọt dịu.",
+            "Pmotadaydu": "Vỏ bánh su mỏng, mềm mịn và hơi dai dai ôm trọn phần nhân kem trứng vàng óng béo ngậy, mát lạnh tuôn trào ngay khi bạn cắn miếng đầu tiên. Món ăn vặt tuổi thơ chưa bao giờ hết hot."
         },
         {
             "id": "7",
             "Category_ID": "3",
             "Name": "Bánh Quy Bơ",
             "Price": 60000,
-            "Image": "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_6_11_638537285547421498_cach-lam-banh-quy-bo-danisa.png"
+            "Image": "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_6_11_638537285547421498_cach-lam-banh-quy-bo-danisa.png",
+            "Pmotangan": "Bánh quy truyền thống giòn tan, thơm lừng vị bơ.",
+            "Pmotadaydu": "Những chiếc bánh quy bơ được nướng vàng ươm, giòn rụm, khi ăn như tan ngay trong miệng. Hương thơm của bơ sữa hảo hạng tạo nên cảm giác ấm áp và vô cùng lý tưởng để nhâm nhi vào buổi trà chiều."
         },
         {
             "id": "8",
             "Category_ID": "3",
             "Name": "Macaron",
             "Price": 150000,
-            "Image": "https://www.allrecipes.com/thmb/ftmd4xSXxQOcYwyLoVOAeEQHkpY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/223232macaronsKim4x3-97e86da8c9e849218d5b70ac93bbe5f1.jpg"
+            "Image": "https://www.allrecipes.com/thmb/ftmd4xSXxQOcYwyLoVOAeEQHkpY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/223232macaronsKim4x3-97e86da8c9e849218d5b70ac93bbe5f1.jpg",
+            "Pmotangan": "Bánh ngọt kiểu Pháp với đa dạng màu sắc và nhân kem.",
+            "Pmotadaydu": "Tinh hoa của ẩm thực Pháp thu nhỏ trong những chiếc bánh Macaron đầy màu sắc. Lớp vỏ được làm từ bột hạnh nhân mỏng manh, giòn tan bên ngoài, xốp dẻo bên trong, kẹp giữa là lớp nhân ganache đa dạng hương vị đầy cuốn hút."
         },
         {
             "id": "9",
             "Category_ID": "1",
             "Name": "Bánh Kem Tiramisu",
             "Price": 300000,
-            "Image": ""
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZWFQa8KLBg-kv6YBZ85evmf7L4o011hHNBw&s",
+            "Pmotangan": "Hương vị Ý với sự kết hợp của cà phê và cacao.",
+            "Pmotadaydu": "Sự pha trộn tinh tế giữa cốt bánh mềm đẫm vị cà phê espresso, chút rượu Rhum thơm nồng và lớp kem phô mai mascarpone béo ngậy chuẩn Ý. Bề mặt phủ một lớp bột cacao mịn màng, làm nên món tráng miệng đẳng cấp."
         },
         {
             "id": "10",
             "Category_ID": "1",
             "Name": "Bánh Kem Phô Mai",
             "Price": 220000,
-            "Image": "https://titiphamcake.com/wp-content/uploads/2023/03/z4162184332606_1cdfeb69432b797671f085703191c04b-768x1024.jpg"
+            "Image": "https://titiphamcake.com/wp-content/uploads/2023/03/z4162184332606_1cdfeb69432b797671f085703191c04b-768x1024.jpg",
+            "Pmotangan": "Bánh kem phô mai béo ngậy, mịn màng đậm vị.",
+            "Pmotadaydu": "Dành riêng cho những tín đồ say mê phô mai, chiếc bánh có kết cấu vô cùng đặc và sánh mịn. Phô mai cream cheese được đánh bông khéo léo kết hợp cùng lớp đế bánh quy giòn mang đến dư vị béo thơm đọng lại mãi."
         },
         {
             "id": "11",
             "Category_ID": "1",
             "Name": "Bánh Kem Bắp",
             "Price": 270000,
-            "Image": "https://r2.cms.4handy.vn/banh-kem-bap.jpg"
+            "Image": "https://r2.cms.4handy.vn/banh-kem-bap.jpg",
+            "Pmotangan": "Bánh kem mềm xốp thanh mát với hạt bắp tự nhiên.",
+            "Pmotadaydu": "Món bánh mang đậm hương vị quen thuộc nhưng không kém phần mới mẻ. Cốt bánh mềm mịn kẹp lớp kem tươi thơm mùi bắp và vô số hạt bắp Mỹ luộc giòn ngọt, rắc thêm xíu hạnh nhân lát tạo độ giòn bùi."
         },
         {
             "id": "12",
             "Category_ID": "2",
             "Name": "Bánh Mì Hoa Cúc",
             "Price": 80000,
-            "Image": "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/4/15/image13-1649995664545-16499956646561192638263.jpg"
+            "Image": "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/4/15/image13-1649995664545-16499956646561192638263.jpg",
+            "Pmotangan": "Bánh dai mềm với hương hoa cam thoang thoảng.",
+            "Pmotadaydu": "Bánh mì ngọt truyền thống của Pháp (Brioche) được thắt bím vô cùng đẹp mắt. Bánh có cấu trúc thớ dai, xé sợi dễ dàng, thơm lừng mùi bơ, sữa và thoang thoảng chút hương hoa cam thanh khiết."
         },
         {
             "id": "13",
             "Category_ID": "2",
             "Name": "Bánh Mì Chà Bông Phô Mai",
             "Price": 45000,
-            "Image": "https://nafarm.vn/upload/images/banh-mi-pho-mai-tan-chay-700g.jpg"
+            "Image": "https://nafarm.vn/upload/images/banh-mi-pho-mai-tan-chay-700g.jpg",
+            "Pmotangan": "Sự kết hợp mặn ngọt tuyệt hảo giữa chà bông và phô mai.",
+            "Pmotadaydu": "Món bánh gây bão với cốt bánh mềm ẩm bao phủ bởi lớp chà bông lợn đậm đà mặn mặn. Khi tách đôi, lớp phô mai béo ngậy đặc sánh tuôn trào bên trong mang đến trải nghiệm vị giác vô cùng bùng nổ."
         },
         {
             "id": "14",
             "Category_ID": "2",
             "Name": "Bánh Bông Lan Trứng Muối",
             "Price": 65000,
-            "Image": "https://www.cet.edu.vn/wp-content/uploads/2019/11/banh-bong-lan-trung-muoi.jpg"
+            "Image": "https://www.cet.edu.vn/wp-content/uploads/2019/11/banh-bong-lan-trung-muoi.jpg",
+            "Pmotangan": "Bánh xốp mềm phủ sốt béo, chà bông và trứng muối.",
+            "Pmotadaydu": "Cốt bánh bông lan vô cùng xốp mịn không bị khô, được phủ ngập lớp sốt bơ trứng vàng ươm, điểm xuyết thêm chà bông tơi xốp, trứng muối nướng thơm lừng và lạp xưởng dai giòn sực sực."
         },
         {
             "id": "15",
             "Category_ID": "2",
             "Name": "Bánh Muffin Vani",
             "Price": 30000,
-            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQ60f5mvyI5rneayQqHxVpuKI-gQx-GPVJA&s"
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQ60f5mvyI5rneayQqHxVpuKI-gQx-GPVJA&s",
+            "Pmotangan": "Bánh Muffin nhỏ gọn thơm lừng vị vani êm dịu.",
+            "Pmotadaydu": "Bánh muffin nướng bung nở hấp dẫn, đặc ruột nhưng vẫn xốp mềm, mang hương vani tự nhiên ngọt dịu. Rất phù hợp để mang theo đi học, đi làm hoặc làm món ăn xế nhanh chóng."
         },
         {
             "id": "16",
             "Category_ID": "3",
             "Name": "Bánh Quy Socola Chocochip",
             "Price": 65000,
-            "Image": "https://cdn.tgdd.vn/2021/01/CookRecipe/GalleryStep/thanh-pham-1101.jpg"
+            "Image": "https://cdn.tgdd.vn/2021/01/CookRecipe/GalleryStep/thanh-pham-1101.jpg",
+            "Pmotangan": "Bánh quy bơ giòn rụm xen lẫn những hạt chocochip.",
+            "Pmotadaydu": "Chiếc bánh quy nướng giòn bên ngoài, hơi mềm ở tâm (chewy cookies) theo đúng phong cách Mỹ. Vị ngọt thơm của bánh hòa lẫn với những hạt socola chip đắng nhẹ tan chảy tạo nên sự hấp dẫn khó chối từ."
         },
         {
             "id": "17",
             "Category_ID": "3",
             "Name": "Kẹo Nougat Hạt Củ Quả",
             "Price": 120000,
-            "Image": "https://cdn.tgdd.vn/2021/04/CookProduct/1-1200x676-59.jpg"
+            "Image": "https://cdn.tgdd.vn/2021/04/CookProduct/1-1200x676-59.jpg",
+            "Pmotangan": "Kẹo hạnh phúc dai mềm dẻo với nhiều loại hạt cao cấp.",
+            "Pmotadaydu": "Kẹo sữa hạt (Nougat) dai dẻo nhẹ, thơm lừng vị bơ sữa bò mà không hề bị ngọt gắt hay dính răng. Bên trong kẹo ngập tràn các loại hạt dinh dưỡng (hạnh nhân, óc chó) và trái cây sấy chua ngọt cân bằng vị."
         },
         {
             "id": "18",
             "Category_ID": "3",
             "Name": "Kẹo Dẻo Chíp Chíp Trái Cây",
             "Price": 40000,
-            "Image": "https://khosimypham.com/wp-content/uploads/25845_vn-11134207-7r98o-lsl4bxlbnmhl75_20241130164725-4.jpg"
+            "Image": "https://khosimypham.com/wp-content/uploads/25845_vn-11134207-7r98o-lsl4bxlbnmhl75_20241130164725-4.jpg",
+            "Pmotangan": "Viên kẹo dẻo dai dai với đủ hương vị trái cây tự nhiên.",
+            "Pmotadaydu": "Những viên kẹo dẻo mềm, đàn hồi và dai ngon với hình dáng bắt mắt. Kẹo được chiết xuất từ nước ép trái cây thật, mang lại hương vị tươi mới: dâu, cam, táo, nho... an toàn cho cả trẻ nhỏ."
         },
         {
             "id": "19",
             "Category_ID": "3",
             "Name": "Bánh Ngói Hạnh Nhân",
             "Price": 95000,
-            "Image": "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2023_12_16_638383234275370490_banh-ngoi-hanh-nhan-thumb.jpg"
+            "Image": "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2023_12_16_638383234275370490_banh-ngoi-hanh-nhan-thumb.jpg",
+            "Pmotangan": "Bánh giòn mỏng nướng thơm phức đầy ắp hạnh nhân.",
+            "Pmotadaydu": "Từng lát bánh được dàn mỏng tang nướng chín tới vàng ruộm, giòn rụm trong miệng. Bánh chứa rất ít bột, chủ yếu là hạnh nhân lát phủ kín bề mặt, siêu thơm, siêu bùi béo và hoàn toàn phù hợp ăn kiêng."
         },
         {
             "id": "20",
             "Category_ID": "4",
             "Name": "Cheesecake Dâu Tây",
             "Price": 65000,
-            "Image": "https://cdn.tgdd.vn/Files/2022/07/16/1448325/cach-lam-cheesecake-dau-tay-dep-mat-kho-long-cuong-noi-202207161606029334.jpg"
+            "Image": "https://cdn.tgdd.vn/Files/2022/07/16/1448325/cach-lam-cheesecake-dau-tay-dep-mat-kho-long-cuong-noi-202207161606029334.jpg",
+            "Pmotangan": "Bánh phô mai nướng kết hợp mứt dâu tây chua nhẹ.",
+            "Pmotadaydu": "Phần phô mai kem nướng mịn đặc nhưng vẫn tan nhẹ trên đầu lưỡi, nằm trên lớp đế bánh quy bùi bùi. Phủ trên cùng là lớp mứt dâu tây đỏ tươi tự nấu với vị chua ngọt hài hòa làm bừng tỉnh vị giác."
         },
         {
             "id": "21",
             "Category_ID": "4",
             "Name": "Mousse Chanh Dây",
             "Price": 55000,
-            "Image": "https://file.hstatic.net/200000721249/file/e_chanh_d_y__t_b_o_cho_ng__i__n_ki_ng_4672151084d546969a819e816d9e781f.jpg"
+            "Image": "https://file.hstatic.net/200000721249/file/e_chanh_d_y__t_b_o_cho_ng__i__n_ki_ng_4672151084d546969a819e816d9e781f.jpg",
+            "Pmotangan": "Mousse thanh mát với hương chanh dây thơm dịu xua tan ngán.",
+            "Pmotadaydu": "Chiếc bánh Mousse sở hữu kết cấu lỏng nhẹ, bông xốp tan ngay tắp lự. Hương chanh dây tươi vắt lấy cốt pha cùng kem whipping tạo nên vị chua thanh thoát rất đưa miệng, lý tưởng làm tráng miệng sau bữa ăn."
         },
         {
             "id": "22",
             "Category_ID": "4",
             "Name": "Basque Burnt Cheesecake",
             "Price": 75000,
-            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxGwkXRW1nzKT2u0SC8u7BhnRVAgTS8YElQ&s"
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxGwkXRW1nzKT2u0SC8u7BhnRVAgTS8YElQ&s",
+            "Pmotangan": "Cheesecake cháy viền với lớp trong ẩm mịn độc đáo.",
+            "Pmotadaydu": "Đặc trưng bởi vẻ ngoài xém đen cá tính như bị cháy, chiếc bánh này lại ẩn chứa lớp caramel đắng dịu ở vỏ và ruột phô mai béo ngậy vô cùng mềm lỏng, mượt mà bên trong, hoàn toàn đánh gục mọi thực khách."
         },
         {
             "id": "23",
             "Category_ID": "5",
             "Name": "Tart Trứng",
             "Price": 25000,
-            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAi0s28b9lFhB96QkegVFl4GNtzod5Pi6ww&s"
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAi0s28b9lFhB96QkegVFl4GNtzod5Pi6ww&s",
+            "Pmotangan": "Đế tart ngàn lớp giòn với nhân trứng nướng vàng ươm.",
+            "Pmotadaydu": "Tart trứng kiểu Hong Kong nổi tiếng với lớp vỏ pastry ngàn lớp phồng xốp giòn tan. Phần nhân custard bên trong được làm từ trứng gà tươi và sữa, nướng lên có màu xém vàng thơm lừng, vừa ngọt ngào lại ấm áp."
         },
         {
             "id": "24",
             "Category_ID": "5",
             "Name": "Tart Trái Cây Tươi",
             "Price": 45000,
-            "Image": "https://file.hstatic.net/200000438087/article/318521-combo-6-banh-tart-nhan-tr_9b5c2051790c4e229a5532b5cfeb00f8.jpg"
+            "Image": "https://file.hstatic.net/200000438087/article/318521-combo-6-banh-tart-nhan-tr_9b5c2051790c4e229a5532b5cfeb00f8.jpg",
+            "Pmotangan": "Tart giòn kết hợp kem custard mát lạnh và trái cây tươi.",
+            "Pmotadaydu": "Lớp đế tart quy bơ cứng giòn nâng đỡ phần kem custard vani mềm mượt ngọt dịu ở giữa. Điểm nhấn là vô vàn các loại trái cây tươi ngon theo mùa (kiwi, dâu, nho...) trang trí đầy màu sắc trên mặt bánh."
         },
         {
             "id": "25",
             "Category_ID": "5",
             "Name": "Bánh Táo",
             "Price": 50000,
-            "Image": "https://www.huongnghiepaau.com/wp-content/uploads/2018/04/72aa7d15b21afd42eb5f4dfd5619fddf.jpg"
+            "Image": "https://www.huongnghiepaau.com/wp-content/uploads/2018/04/72aa7d15b21afd42eb5f4dfd5619fddf.jpg",
+            "Pmotangan": "Bánh nướng Âu cổ điển với nhân táo xào quế thơm nồng.",
+            "Pmotadaydu": "Chiếc bánh táo Apple Pie chuẩn phong cách Mỹ, lớp vỏ bánh pie đan rế bọc kín lấy phần nhân táo cắt lựu xào cùng đường nâu và bột quế. Khi ăn bánh có hương thơm ấm áp của quế hòa cùng vị chua ngọt từ táo."
         },
         {
             "id": "26",
             "Category_ID": "1",
             "Name": "Bánh Kem Red Velvet",
             "Price": 320000,
-            "Image": "https://r2.cms.4handy.vn/231-7o0a1840.jpg"
+            "Image": "https://r2.cms.4handy.vn/231-7o0a1840.jpg",
+            "Pmotangan": "Bánh nhung đỏ quyến rũ kết hợp cùng cream cheese chua ngọt.",
+            "Pmotadaydu": "Đúng như tên gọi 'Nhung đỏ', lớp cốt bánh tơi xốp, mềm ẩm, thoang thoảng hương cacao mang màu đỏ thẫm lãng mạn. Lớp kem cream cheese trắng muốt trét giữa các tầng bánh giúp cân bằng độ ngọt một cách hoàn hảo."
         },
         {
             "id": "27",
             "Category_ID": "2",
             "Name": "Donut Phủ Socola",
             "Price": 20000,
-            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3apUwMm1Lbf-kf_Bp7R_XUWbgLD5A1BBzg&s"
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3apUwMm1Lbf-kf_Bp7R_XUWbgLD5A1BBzg&s",
+            "Pmotangan": "Bánh vòng xốp mềm được phủ lớp socola đen béo ngậy.",
+            "Pmotadaydu": "Món bánh vòng (Doughnut) chiên phồng nhẹ tơi, xốp mềm không ngậm dầu. Bên trên được phủ đẫm một lớp socola đen nguyên chất căng bóng, thỉnh thoảng rắc thêm cốm màu vụn vui mắt. Là món ăn cực kì khoái khẩu cho các bé."
         },
         {
             "id": "28",
             "Category_ID": "2",
             "Name": "Bánh Đan Mạch Trái Cây",
             "Price": 35000,
-            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1dDBKuoNd6OAxcWWJrMxnyGyPk5viTAGOlA&s"
+            "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1dDBKuoNd6OAxcWWJrMxnyGyPk5viTAGOlA&s",
+            "Pmotangan": "Bánh ngàn lớp nướng giòn rụm với mứt trái cây hấp dẫn.",
+            "Pmotadaydu": "Bánh Danish Pastry sử dụng kĩ thuật cán ngàn lớp kì công, nướng lên có cấu trúc bung xốp giòn rụm hoàn hảo. Lõi bánh được bơm đầy kem phô mai và một lớp mứt trái cây (đào, dâu, việt quất) tươi mới rực rỡ."
         },
         {
             "id": "29",
             "Category_ID": "4",
             "Name": "Panna Cotta",
             "Price": 60000,
-            "Image": "https://www.cet.edu.vn/wp-content/uploads/2021/03/cach-lam-panna-cotta.jpg"
+            "Image": "https://www.cet.edu.vn/wp-content/uploads/2021/03/cach-lam-panna-cotta.jpg",
+            "Pmotangan": "Tráng miệng mượt như lụa từ kem sữa và sốt trái cây.",
+            "Pmotadaydu": "Panna Cotta (Kem nấu) kiểu Ý núng nính, mềm mượt như một dải lụa khi đưa vào miệng. Vị béo từ heavy cream được gia giảm vừa vặn, kết hợp cùng các loại sốt trái cây nhiệt đới làm nên sự tươi mát khó cưỡng."
         }
     ],
     "Cart": []
