@@ -7,11 +7,11 @@
     },
     "infoshop": {
         "name": "Ngọt - Brownies & Cookies",
-        "phone": "0912.345.678",
+        "phone": "0971.408.262",
         "address": "456 Đường C, Phường D, TP. E",
         "time": "7:00 Sáng - 9:00 Tối",
         "mota": "Mời bạn xem menu và đặt hàng online qua trang web này nhé,\nCác bạn có thể đến nhận tại cửa hàng hoặc mình sẽ giao hàng đến cho bạn nè ~",
-        "image": "https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-1/465862386_122111207090595504_7930397557877359795_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeGDPD8-r12bhdrS-hZ9YSXy5Ylt1J52AB_liW3UnnYAH2IpfXYWRziWUKphnk9LzuuF6zL3QIm7Cbxi3udsWJz6&_nc_ohc=eCigeJu_NSwQ7kNvwErlaA9&_nc_oc=AdrHrAZpO-_GU_QPMtbY91BP9E9fZRp9haCD-PlzyUPrHPgMWDulbskAddIWDOQwLmnTQ5QSY89opXNKjtgm-nMb&_nc_zt=24&_nc_ht=scontent.fhan2-5.fna&_nc_gid=ccJ4zcBdt4KmHwKbgzzVIg&_nc_ss=7b2a8&oh=00_Af7fx7E3aZe6tH4mKOxhcNWRVezjhKeSanxjp2WRr9oGiQ&oe=6A0F2B97"
+        "image": "https://i.postimg.cc/nVVnbcXr/465862386-122111207090595504-7930397557877359795-n.jpg"
     },
     "pagesText": {
         "gioithieu": {
@@ -20,7 +20,7 @@
         },
         "giaodich": {
             "title": "🤝 Hướng dẫn giao dịch",
-            "content": "1. Chọn món ăn bạn yêu thích ở Trang Chủ và ấn 'Thêm vào giỏ hàng'.\n2. Bấm vào biểu tượng Giỏ Hàng để kiểm tra lại các món đã chọn và tổng số tiền.\n3. Điền thông tin giao hàng (Tên, Số điện thoại, Địa chỉ).\n4. Bấm 'Xác nhận đặt hàng' và đợi chúng tôi giao tới nhé."
+            "content": "1. Chọn món ăn bạn yêu thích ở Trang Chủ và ấn 'Thêm vào giỏ hàng'.\n2. Xem lại Giỏ Hàng để kiểm tra lại các món đã chọn và tổng số tiền.\n3. Bấm thanh toán và điền thông tin giao hàng (Tên, Số điện thoại, Địa chỉ).\n4. Bấm 'Xác nhận đặt hàng' và đợi chúng tôi giao tới nhé."
         },
         "thanhtoan": {
             "title": "💳 Chính sách thanh toán",
