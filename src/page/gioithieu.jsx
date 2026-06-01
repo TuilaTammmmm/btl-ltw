@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Breadcrumb } from 'react-bootstrap';
-import axios from 'axios';
+import { getPagesText } from '../api/configApi';
 
 function Gioithieu() {
     const [ndgioithieu, setndgioithieu] = useState({});
 
     useEffect(() => {
-        axios.get('http://localhost:9999/pagesText')
+        getPagesText()
             .then(res => {
                 setndgioithieu(res.data.gioithieu);
             })

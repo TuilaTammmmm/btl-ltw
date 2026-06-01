@@ -316,5 +316,31 @@
             "Pmotadaydu": "Panna Cotta (Kem nấu) kiểu Ý núng nính, mềm mượt như một dải lụa khi đưa vào miệng. Vị béo từ heavy cream được gia giảm vừa vặn, kết hợp cùng các loại sốt trái cây nhiệt đới làm nên sự tươi mát khó cưỡng."
         }
     ],
-    "Cart": []
+    "Cart": [],
+    "Payment": [
+        {
+            "id": "1",
+            "customerName": "Nguyễn Văn A",
+            "phone": "0901234567",
+            "address": "123 Đường Lê Lợi, Quận 1, TP.HCM",
+            "totalAmount": 110000,
+            "paymentMethod": "Tiền mặt khi nhận hàng (COD)",
+            "status": "Đang xử lý",
+            "createdAt": "2026-06-01T21:49:00+07:00",
+            "items": [
+                {
+                    "productId": "1",
+                    "name": "Bánh Mì Kẹp Thịt",
+                    "price": 25000,
+                    "quantity": 2
+                },
+                {
+                    "productId": "29",
+                    "name": "Panna Cotta",
+                    "price": 60000,
+                    "quantity": 1
+                }
+            ]
+        }
+    ]
 }

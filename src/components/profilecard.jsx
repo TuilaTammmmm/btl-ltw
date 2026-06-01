@@ -1,12 +1,12 @@
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { getInfoShop } from '../api/configApi';
 
 const Profilecard = () => {
     const [info, setInfo] = useState({});
 
     useEffect(() => {
-        axios.get('http://localhost:9999/infoshop')
+        getInfoShop()
             .then(res => setInfo(res.data))
             .catch(err => console.error("", err));
     }, []);
@@ -15,7 +15,7 @@ const Profilecard = () => {
             <Row className='gx-4 align-items-center'>
                 <Col xs={12} md={4} lg={3} className='text-center'>
                     <div className='rounded-circle shadow-sm overflow-hidden d-inline-flex align-items-center justify-content-center p-1 bg-white border' style={{ width: '160px', height: '160px' }}>
-                        <Image src={info.image || "/logo192.png"} alt="Profile" fluid className='rounded-circle w-100 h-100 object-fit-cover' />
+                        <Image src={info.image} style={{ width: '160px', height: '160px' }}/>
                     </div>
                 </Col>
 
