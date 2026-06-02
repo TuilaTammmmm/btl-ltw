@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Breadcrumb } from 'react-bootstrap';
-import axios from 'axios';
+import { getPagesText } from '../api/configApi';
 
 function Thanhtoan() {
     const [ndthanhtoan, setndthanhtoan] = useState({});
 
     useEffect(() => {
-        axios.get('http://localhost:9999/pagesText')
+        getPagesText()
             .then(res => {
                 setndthanhtoan(res.data.thanhtoan);
             })

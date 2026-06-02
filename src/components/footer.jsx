@@ -1,12 +1,12 @@
 import { Container, Row, Col, } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { getInfoShop } from '../api/configApi';
 
 function Footer() {
     const [info, setInfo] = useState({});
     useEffect(() => {
-        axios.get('http://localhost:9999/infoshop')
+        getInfoShop()
             .then(res => setInfo(res.data))
             .catch(err => console.error("", err));
     }, []);
