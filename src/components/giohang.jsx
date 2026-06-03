@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Button, ListGroup, Alert } from 'react-bootstrap';
-import axios from 'axios';
+import { Card, Button, ListGroup } from 'react-bootstrap';
+import { getCart, updateCartItem, deleteCartItem } from '../api/configApi';
 import { useNavigate } from 'react-router-dom';
 
 const Giohang = () => {
@@ -8,7 +8,7 @@ const Giohang = () => {
     const navigate = useNavigate();
 
     const fetchCart = () => {
-        axios.get('http://localhost:9999/Cart')
+        getCart()
             .then(res => setCartItems(res.data))
             .catch(err => console.error("Lỗi:", err));
     };
@@ -24,7 +24,7 @@ const Giohang = () => {
         if (newQuantity <= 0) {
             removeItem(item.id);
         } else {
-            axios.patch(`http://localhost:9999/Cart/${item.id}`, {
+            updateCartItem(item.id, {
                 Quantity: newQuantity
             }).then(() => {
                 fetchCart();
@@ -34,7 +34,7 @@ const Giohang = () => {
     };
 
     const removeItem = (id) => {
-        axios.delete(`http://localhost:9999/Cart/${id}`)
+        deleteCartItem(id)
             .then(() => {
                 fetchCart();
                 window.dispatchEvent(new Event('cartUpdated'));
@@ -43,7 +43,7 @@ const Giohang = () => {
     };
 
     const clearCart = () => {
-        Promise.all(cartItems.map(item => axios.delete(`http://localhost:9999/Cart/${item.id}`)))
+        Promise.all(cartItems.map(item => deleteCartItem(item.id)))
             .then(() => {
                 fetchCart();
                 window.dispatchEvent(new Event('cartUpdated'));
@@ -51,7 +51,6 @@ const Giohang = () => {
             .catch(err => console.error("Lỗi:", err));
     };
 
-    // Tính tổng giá trị của giỏ hàng bằng cách nhân giá của mỗi món với số lượng và cộng dồn lại
     const totalPrice = cartItems.reduce((sum, item) => sum + ((item.Price || item.price || 0) * (item.Quantity || item.quantity || 1)), 0);
 
     return (
@@ -73,7 +72,7 @@ const Giohang = () => {
                                 <ListGroup.Item key={item.id} className='d-flex justify-content-between align-items-start py-3'>
                                     <div className='flex-grow-1'>
                                         <h6 className='mb-1'>{item.Name || item.name}</h6>
-                                    {item.Note && <div className='text-muted small mb-2 fst-italic'>Ghi chú: {item.Note}</div>}
+                                        {item.Note && <div className='text-muted small mb-2 fst-italic'>Ghi chú: {item.Note}</div>}
                                         <div className='d-flex align-items-center mb-1'>
                                             <Button variant='outline-secondary' size='sm' className='py-0 px-2' onClick={() => updateQuantity(item, -1)}>-</Button>
                                             <span className='mx-2'>{item.Quantity || item.quantity || 1}</span>

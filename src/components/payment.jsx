@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Form, Button, Row, Col, Alert } from 'react-bootstrap';
-import axios from 'axios';
+import { getCart, deleteCartItem, addPayment } from '../api/configApi';
 import { useNavigate } from 'react-router-dom';
 
 const Payment = () => {
     const [cartItems, setCartItems] = useState([]);
-    const [formData, setFormData] = useState({ name: '', phone: '', address: '' });
+    const [formData, setFormData] = useState({ name: '', phone: '', address: '', paymentMethod: 'Tiền mặt khi nhận hàng (COD)' });
     const [success, setSuccess] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:9999/Cart')
+        getCart()
             .then(res => setCartItems(res.data))
             .catch(err => console.error("Lỗi:", err));
     }, []);
@@ -21,8 +21,26 @@ const Payment = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-       
-        Promise.all(cartItems.map(item => axios.delete(`http://localhost:9999/Cart/${item.id}`)))
+
+        const paymentData = {
+            customerName: formData.name,
+            phone: formData.phone,
+            address: formData.address,
+            totalAmount: totalPrice,
+            paymentMethod: formData.paymentMethod,
+            status: "Đang xử lý",
+            createdAt: new Date().toISOString(),
+            items: cartItems.map(item => ({
+                productId: item.productId || item.id,
+                name: item.Name || item.name,
+                price: item.Price || item.price,
+                quantity: item.Quantity || item.quantity || 1,
+                note: item.Note || item.note || ''
+            }))
+        };
+
+        addPayment(paymentData)
+            .then(() => Promise.all(cartItems.map(item => deleteCartItem(item.id))))
             .then(() => {
                 setSuccess(true);
                 window.dispatchEvent(new Event('cartUpdated'));
@@ -60,6 +78,31 @@ const Payment = () => {
                                 <Form.Group className="mb-4">
                                     <Form.Label>Địa chỉ nhận hàng</Form.Label>
                                     <Form.Control as="textarea" rows={3} name="address" value={formData.address} onChange={handleChange} required placeholder="Nhập địa chỉ cụ thể" />
+                                </Form.Group>
+                                <Form.Group className="mb-4">
+                                    <Form.Label className="fw-bold mb-3">Phương thức thanh toán</Form.Label>
+                                    <div className={`border rounded p-3 mb-2 ${formData.paymentMethod === 'Tiền mặt khi nhận hàng (COD)' ? 'border-primary bg-light' : ''}`}>
+                                        <Form.Check
+                                            type="radio"
+                                            id="cod"
+                                            name="paymentMethod"
+                                            value="Tiền mặt khi nhận hàng (COD)"
+                                            label={<span className="fw-medium">Tiền mặt khi nhận hàng (COD)</span>}
+                                            checked={formData.paymentMethod === 'Tiền mặt khi nhận hàng (COD)'}
+                                            onChange={handleChange}
+                                        />
+                                    </div>
+                                    <div className={`border rounded p-3 ${formData.paymentMethod === 'Chuyển khoản ngân hàng' ? 'border-primary bg-light' : ''}`}>
+                                        <Form.Check
+                                            type="radio"
+                                            id="banking"
+                                            name="paymentMethod"
+                                            value="Chuyển khoản ngân hàng"
+                                            label={<span className="fw-medium">Chuyển khoản ngân hàng</span>}
+                                            checked={formData.paymentMethod === 'Chuyển khoản ngân hàng'}
+                                            onChange={handleChange}
+                                        />
+                                    </div>
                                 </Form.Group>
                                 <Button variant="primary" type="submit" size="lg" className="w-100 rounded-3 fw-bold" disabled={cartItems.length === 0}>
                                     Xác nhận đặt hàng

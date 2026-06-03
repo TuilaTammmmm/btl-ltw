@@ -317,5 +317,33 @@
     }
   ],
   "Cart": [],
+  "Payments": [
+    {
+      "customerName": "Tamm",
+      "phone": "0971408262",
+      "address": ".",
+      "totalAmount": 530000,
+      "paymentMethod": "Tiền mặt khi nhận hàng (COD)",
+      "status": "Đang xử lý",
+      "createdAt": "2026-06-03T03:22:24.161Z",
+      "items": [
+        {
+          "productId": "1",
+          "name": "Bánh Kem Socola",
+          "price": 250000,
+          "quantity": 1,
+          "note": ""
+        },
+        {
+          "productId": "2",
+          "name": "Bánh Kem Dâu Tây",
+          "price": 280000,
+          "quantity": 1,
+          "note": ""
+        }
+      ],
+      "id": "od_gz5rGRZw"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
