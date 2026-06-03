@@ -21,8 +21,14 @@ export const getPagesText = () => API.get("/pagesText");
 export const getInfoShop = () => API.get("/infoshop");
 
 // Payment
-export const getPayments = () => API.get("/Payment");
-export const getPaymentById = (id) => API.get(`/Payment/${id}`);
-export const addPayment = (data) => API.post("/Payment", data);
-export const updatePayment = (id, data) => API.put(`/Payment/${id}`, data);
-export const deletePayment = (id) => API.delete(`/Payment/${id}`);
+export const getPayments = () => API.get("/Payments");
+export const getPaymentById = (id) => API.get(`/Payments/${id}`);
+export const addPayment = (data) => API.post("/Payments", data);
+export const updatePayment = (id, data) => API.put(`/Payments/${id}`, data);
+export const deletePayment = (id) => API.delete(`/Payments/${id}`);
+
+// Cart
+export const getCart = () => API.get("/Cart");
+export const addToCartApi = (data) => API.post("/Cart", data);
+export const updateCartItem = (id, data) => API.patch(`/Cart/${id}`, data);
+export const deleteCartItem = (id) => API.delete(`/Cart/${id}`);
