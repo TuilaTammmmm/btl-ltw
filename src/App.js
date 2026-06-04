@@ -6,10 +6,11 @@ import Gioithieu from "./page/gioithieu";
 import Thanhtoan from "./page/thanhtoan";
 import Vanchuyen from "./page/vanchuyen";
 import Dashboard from "./dashboard/dashboard";
-import Securitycheck from "./dashboard/securitycheck";
+import ProductFormPage from "./dashboard/ProductFormPage";
 import Payment from "./components/payment";
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Container } from "react-bootstrap";
+import Login from "./dashboard/ProductFormPage";
 function App() {
   return (
     <BrowserRouter>
@@ -22,14 +23,17 @@ function App() {
             <Route path='/gioithieu' element={<Gioithieu />} />
             <Route path='/giaodich' element={<Giaodich />} />
             <Route path='/thanhtoan' element={<Thanhtoan />} />
+            <Route path='/login' element={<Login />} />
             <Route path='/dashboard' element={<Dashboard />} />
-            <Route path='/securitycheck' element={<Securitycheck />} />
+            <Route path='/dashboard/product/add' element={<ProductFormPage />} />
+            <Route path='/dashboard/product/edit/:id' element={<ProductFormPage />} />
             <Route path='/payment' element={<Payment />} />
           </Routes>
         </main>
         <Footer />
       </Container>
     </BrowserRouter>
+    
   );
 }
 
