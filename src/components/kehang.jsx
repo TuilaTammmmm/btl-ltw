@@ -9,6 +9,17 @@ const Kehang = () => {
     const [timkiem, settimkiem] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
+    const [sortOrders, setSortOrders] = useState({});
+
+    const toggleSort = (categoryId) => {
+        setSortOrders(prev => {
+            const current = prev[categoryId];
+            let next = 'asc';
+            if (current === 'asc') next = 'desc';
+            else if (current === 'desc') next = '';
+            return { ...prev, [categoryId]: next };
+        });
+    };
 
     useEffect(() => {
         Promise.all([
@@ -68,13 +79,29 @@ const Kehang = () => {
                         p.Name.toLowerCase().includes(timkiem.toLowerCase())
                     );
 
+                    const sortOrder = sortOrders[category.id];
+                    if (sortOrder === 'asc') {
+                        items.sort((a, b) => (a.Price || 0) - (b.Price || 0));
+                    } else if (sortOrder === 'desc') {
+                        items.sort((a, b) => (b.Price || 0) - (a.Price || 0));
+                    }
+
                     if (items.length === 0) return null;
 
                     return (
                         <div key={category.id} id={category.id}>
-                            <h4 className='mb-3 text-primary fw-bold text-dark text-capitalize'>
-                                {category.Category_Name} ({items.length})
-                            </h4>
+                            <div className="d-flex justify-content-between align-items-center mb-3">
+                                <h4 className='text-primary fw-bold text-dark text-capitalize mb-0'>
+                                    {category.Category_Name} ({items.length})
+                                </h4>
+                                <Button 
+                                    variant="outline-secondary" 
+                                    size="sm"
+                                    onClick={() => toggleSort(category.id)}
+                                >
+                                    Giá {sortOrder === 'asc' ? '↑' : sortOrder === 'desc' ? '↓' : '↕'}
+                                </Button>
+                            </div>
                             
                             {items.map(c => (
                                 <Card 
