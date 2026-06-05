@@ -107,6 +107,18 @@ const Payment = () => {
                                 <Button variant="primary" type="submit" size="lg" className="w-100 rounded-3 fw-bold" disabled={cartItems.length === 0}>
                                     Xác nhận đặt hàng
                                 </Button>
+                                <Button
+                                    variant="outline-secondary"
+                                    type="button"
+                                    className="w-100 fw-semibold py-2 mt-2"
+                                    style={{
+                                        borderRadius: "8px",
+                                        fontSize: "15px"
+                                    }}
+                                    onClick={() => navigate('/')}
+                                >
+                                    Về trang chủ
+                                </Button>
                             </Form>
                         )}
                     </Card>

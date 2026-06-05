@@ -316,7 +316,24 @@
       "Pmotadaydu": "Panna Cotta (Kem nấu) kiểu Ý núng nính, mềm mượt như một dải lụa khi đưa vào miệng. Vị béo từ heavy cream được gia giảm vừa vặn, kết hợp cùng các loại sốt trái cây nhiệt đới làm nên sự tươi mát khó cưỡng."
     }
   ],
-  "Cart": [],
+  "Cart": [
+    {
+      "productId": "2",
+      "Name": "Bánh Kem Dâu Tây",
+      "Price": 280000,
+      "Quantity": 1,
+      "Note": "",
+      "id": "Zk3bJpCamRk"
+    },
+    {
+      "productId": "1",
+      "Name": "Bánh Kem Socola",
+      "Price": 250000,
+      "Quantity": 1,
+      "Note": "",
+      "id": "TRXZkUPgyJg"
+    }
+  ],
   "Payments": [
     {
       "customerName": "Tamm",

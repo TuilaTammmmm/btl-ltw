@@ -3,11 +3,15 @@ import Navbar from './../components/navbar';
 import Kehang from './../components/kehang';
 import Giohang from '../components/giohang'
 import { Container, Row, Col } from 'react-bootstrap';
+import Profilecard from '../components/profilecard';
+import Footer from '../components/footer';
 
 
 function Home() {
     return (
-        <Container>
+        <>
+            <Profilecard />
+            <Container className="my-4">
             <Row>
                 <Col xs={12} md={4} lg={3} xl={2} className="mb-4">
                     <Navbar />
@@ -21,7 +25,9 @@ function Home() {
                     <Giohang />
                 </Col>
             </Row>
-        </Container>
+            </Container>
+            <Footer />
+        </>
     )
 }
 
