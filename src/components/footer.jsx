@@ -11,7 +11,7 @@ function Footer() {
             .catch(err => console.error("", err));
     }, []);
     return (
-        <Container fluid className='bg-white text-dark p-4 mt-auto rounded-4 shadow-sm'>
+        <Container className='bg-white text-dark p-4 mt-auto rounded-4 shadow-sm'>
             <Row className='gx-4'>
                 <Col xs={12} md={4} className="mb-4">
                     <h3 className='fw-bold mb-2'>{info.name}</h3>

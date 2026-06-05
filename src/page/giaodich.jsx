@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Breadcrumb } from 'react-bootstrap';
 import { getPagesText } from '../api/configApi';
+import Profilecard from '../components/profilecard';
+import Footer from '../components/footer';
 
 function Giaodich() {
     const [ndgiaodich, setndgiaodich] = useState({});
@@ -14,7 +16,9 @@ function Giaodich() {
     }, []);
 
     return (
-        <div className="container mt-4">
+        <>
+            <Profilecard />
+            <div className="container my-4">
             <Breadcrumb>
                 <Breadcrumb.Item href="/" linkProps={{ className: 'text-dark text-decoration-none' }}>Trang chủ</Breadcrumb.Item>
                 <Breadcrumb.Item active>Giao dịch</Breadcrumb.Item>
@@ -27,7 +31,9 @@ function Giaodich() {
             <p className="fs-5" style={{ whiteSpace: 'pre-line' }}>
                 {ndgiaodich.content}
             </p>
-        </div>
+            </div>
+            <Footer />
+        </>
     );
 }
 
